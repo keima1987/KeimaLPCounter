@@ -1,0 +1,47 @@
+﻿<Page x:Name="pgMain"
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="pgMain_Loaded">
+
+    <Grid x:Name="gdMain" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <CommandBar x:Name="commMain" >
+            <AppBarButton x:Name="btnNew" Icon="Page2" Label="New" Click="btnNew_Click" ToolTipService.ToolTip="New Game"/>
+        </CommandBar>
+        <Viewbox x:Name="vbMain" Margin="0,48,0,0">
+            <Grid x:Name="gdElements" Margin="20,0,20,20">
+                <Button x:Name="btnLPAdd1" Content="+" HorizontalAlignment="Left" Margin="515,20,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPAdd1_Click"/>
+                <ProgressBar x:Name="pbLP1" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Value="8000" SmallChange="8" MinWidth="11" Width="500" Height="10" Maximum="8000"/>
+                <TextBlock x:Name="lblLP1" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="8000" VerticalAlignment="Top" FontSize="72">
+                    <TextBlock.Projection>
+                        <PlaneProjection/>
+                    </TextBlock.Projection>
+                </TextBlock>
+                <TextBlock x:Name="lblLP2" HorizontalAlignment="Left" Margin="10,118,0,0" TextWrapping="Wrap" Text="8000" VerticalAlignment="Top" FontSize="72"/>
+                <TextBlock x:Name="lblLP3" HorizontalAlignment="Left" Margin="10,236,0,0" TextWrapping="Wrap" Text="8000" VerticalAlignment="Top" FontSize="72"/>
+                <TextBlock x:Name="lblLP4" HorizontalAlignment="Left" Margin="10,354,0,0" TextWrapping="Wrap" Text="8000" VerticalAlignment="Top" FontSize="72"/>
+                <ProgressBar x:Name="pbLP4" HorizontalAlignment="Left" Margin="10,457,0,0" VerticalAlignment="Top" Value="8000" SmallChange="8" Width="500" Height="10" Maximum="8000"/>
+                <ProgressBar x:Name="pbLP3" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Value="8000" SmallChange="8" Width="500" Height="10" Maximum="8000"/>
+                <ProgressBar x:Name="pbLP2" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Value="8000" SmallChange="8" Width="500" Height="10" Maximum="8000"/>
+                <TextBox x:Name="edtLP1" HorizontalAlignment="Left" Margin="360,20,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="48" MinWidth="64" Width="150" TextAlignment="Right" InputScope="Number" MaxLength="5"/>
+                <TextBox x:Name="edtLP2" HorizontalAlignment="Left" Margin="360,138,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="48" Width="150" TextAlignment="Right" InputScope="Number" MaxLength="5"/>
+                <TextBox x:Name="edtLP3" HorizontalAlignment="Left" Margin="360,256,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="48" Width="150" TextAlignment="Right" InputScope="Number" MaxLength="5"/>
+                <TextBox x:Name="edtLP4" HorizontalAlignment="Left" Margin="360,374,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="48" Width="150" TextAlignment="Right" InputScope="Number" MaxLength="5"/>
+                <Button x:Name="btnLPRem1" Content="-" HorizontalAlignment="Left" Margin="515,69,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPRem1_Click"/>
+                <Button x:Name="btnLPAdd2" Content="+" HorizontalAlignment="Left" Margin="515,138,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPAdd2_Click"/>
+                <Button x:Name="btnLPRem2" Content="-" HorizontalAlignment="Left" Margin="515,187,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPRem2_Click"/>
+                <Button x:Name="btnLPAdd3" Content="+" HorizontalAlignment="Left" Margin="515,256,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPAdd3_Click"/>
+                <Button x:Name="btnLPRem3" Content="-" HorizontalAlignment="Left" Margin="515,305,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPRem3_Click"/>
+                <Button x:Name="btnLPAdd4" Content="+" HorizontalAlignment="Left" Margin="515,374,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPAdd4_Click"/>
+                <Button x:Name="btnLPRem4" Content="-" HorizontalAlignment="Left" Margin="515,423,0,0" VerticalAlignment="Top" FontSize="24" Width="44" Click="btnLPRem4_Click"/>
+                <TextBlock x:Name="lblName1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top"/>
+                <TextBlock x:Name="lblName2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Player 2" VerticalAlignment="Top" Margin="0,118,0,0"/>
+                <TextBlock x:Name="lblName3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Player 3" VerticalAlignment="Top" Margin="0,236,0,0"/>
+                <TextBlock x:Name="lblName4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Player 4" VerticalAlignment="Top" Margin="0,354,0,0"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Page>
